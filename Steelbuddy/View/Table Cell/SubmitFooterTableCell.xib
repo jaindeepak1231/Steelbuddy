@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="SubmitFooterTableCell" customModule="Steelbuddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6M-m1-Uo4">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="2"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.5" id="sDL-dz-8Xr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riu-dQ-4zP">
+                        <rect key="frame" x="166" y="10" width="145" height="40"/>
+                        <color key="backgroundColor" red="0.70980392160000005" green="0.058823529409999999" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="145" id="NrQ-kC-iTD"/>
+                            <constraint firstAttribute="height" constant="40" id="f7V-mN-5nD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <state key="normal" title="SUBMIT QUOTE">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="W6M-m1-Uo4" secondAttribute="trailing" id="8Xg-dC-QXH"/>
+                    <constraint firstItem="riu-dQ-4zP" firstAttribute="top" secondItem="W6M-m1-Uo4" secondAttribute="bottom" constant="8" id="I16-g1-Wt1"/>
+                    <constraint firstItem="W6M-m1-Uo4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PHp-8Y-9E6"/>
+                    <constraint firstItem="W6M-m1-Uo4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZB8-qH-vcm"/>
+                    <constraint firstAttribute="trailing" secondItem="riu-dQ-4zP" secondAttribute="trailing" constant="15" id="dTO-6w-c5W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSubmit" destination="riu-dQ-4zP" id="NdC-bt-41w"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="59.5"/>
+        </tableViewCell>
+    </objects>
+</document>

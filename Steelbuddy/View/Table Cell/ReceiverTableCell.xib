@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="213" id="q11-xJ-L8W" customClass="ReceiverTableCell" customModule="Steelbuddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q11-xJ-L8W" id="Pwx-Ag-HZY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="212.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5P-qA-GRd">
+                        <rect key="frame" x="10" y="6" width="193" height="89"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:50 AM" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4V-VR-icU">
+                        <rect key="frame" x="143" y="75" width="52" height="14"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpq-cE-Z4R">
+                        <rect key="frame" x="18" y="12" width="138.5" height="61"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xpq-cE-Z4R" firstAttribute="top" secondItem="Pwx-Ag-HZY" secondAttribute="top" constant="12" id="ALO-w3-pqG"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="P4V-VR-icU" secondAttribute="bottom" constant="12" id="Sdq-iH-SuV"/>
+                    <constraint firstItem="Q5P-qA-GRd" firstAttribute="trailing" secondItem="P4V-VR-icU" secondAttribute="trailing" constant="8" id="cGJ-wo-Tc4"/>
+                    <constraint firstItem="Q5P-qA-GRd" firstAttribute="top" secondItem="Xpq-cE-Z4R" secondAttribute="top" constant="-6" id="eXH-FN-iIc"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Xpq-cE-Z4R" secondAttribute="trailing" constant="125" id="iqX-GF-h5t"/>
+                    <constraint firstItem="Xpq-cE-Z4R" firstAttribute="leading" secondItem="Pwx-Ag-HZY" secondAttribute="leading" constant="18" id="kET-54-9dL"/>
+                    <constraint firstItem="Q5P-qA-GRd" firstAttribute="leading" secondItem="Xpq-cE-Z4R" secondAttribute="leading" constant="-8" id="qC2-VW-2Vu"/>
+                    <constraint firstAttribute="trailing" secondItem="P4V-VR-icU" secondAttribute="trailing" constant="125" id="qQ4-iK-DEa"/>
+                    <constraint firstItem="Q5P-qA-GRd" firstAttribute="bottom" secondItem="P4V-VR-icU" secondAttribute="bottom" constant="6" id="so1-R5-BA8"/>
+                    <constraint firstItem="P4V-VR-icU" firstAttribute="bottom" secondItem="Xpq-cE-Z4R" secondAttribute="bottom" constant="16" id="t7y-ho-ad1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblMSg" destination="Xpq-cE-Z4R" id="v9w-Au-WAL"/>
+                <outlet property="lbldate" destination="P4V-VR-icU" id="anY-CH-6uX"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="213.5"/>
+        </tableViewCell>
+    </objects>
+</document>

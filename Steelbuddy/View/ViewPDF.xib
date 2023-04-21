@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewPDF" customModule="Steelbuddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quL-uK-uHe">
+                    <rect key="frame" x="12" y="12" width="351" height="643"/>
+                    <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgt-2x-efy">
+                    <rect key="frame" x="12" y="15" width="50" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwC-TA-kW3">
+                            <rect key="frame" x="6" y="9" width="32" height="32"/>
+                            <state key="normal" image="ic_back"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45026740771812079" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="xwC-TA-kW3" firstAttribute="centerY" secondItem="fgt-2x-efy" secondAttribute="centerY" id="YMq-QR-UzH"/>
+                        <constraint firstAttribute="height" constant="50" id="cYM-DM-fdO"/>
+                        <constraint firstAttribute="width" constant="50" id="ocu-hC-9W5"/>
+                        <constraint firstItem="xwC-TA-kW3" firstAttribute="centerX" secondItem="fgt-2x-efy" secondAttribute="centerX" constant="-3" id="uHB-Co-nXh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fgt-2x-efy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="9wd-AR-rVq"/>
+                <constraint firstItem="fgt-2x-efy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Bqs-S1-b5y"/>
+                <constraint firstItem="quL-uK-uHe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="KVp-hB-NxQ"/>
+                <constraint firstAttribute="bottom" secondItem="quL-uK-uHe" secondAttribute="bottom" constant="12" id="eiD-AB-VSq"/>
+                <constraint firstItem="quL-uK-uHe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="fhe-wy-H9T"/>
+                <constraint firstAttribute="trailing" secondItem="quL-uK-uHe" secondAttribute="trailing" constant="12" id="vFU-y8-NdX"/>
+            </constraints>
+            <connections>
+                <outlet property="btnBack" destination="xwC-TA-kW3" id="eYs-qj-gi2"/>
+                <outlet property="viewBack" destination="fgt-2x-efy" id="HQO-j1-dJz"/>
+                <outlet property="webView" destination="quL-uK-uHe" id="dEy-mh-bBQ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="32" height="32"/>
+    </resources>
+</document>

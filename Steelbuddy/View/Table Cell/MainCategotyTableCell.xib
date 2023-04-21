@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="MainCategotyTableCell" customModule="Steelbuddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBm-s8-qML">
+                        <rect key="frame" x="15" y="0.0" width="290" height="66.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X6-gd-91e">
+                                <rect key="frame" x="15" y="24" width="39" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zp-S8-WqF">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="66.5"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" image="ic_action_open"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4Zp-S8-WqF" secondAttribute="bottom" id="FNV-qf-oje"/>
+                            <constraint firstItem="4Zp-S8-WqF" firstAttribute="leading" secondItem="KBm-s8-qML" secondAttribute="leading" id="P9J-Yk-5eo"/>
+                            <constraint firstAttribute="trailing" secondItem="4Zp-S8-WqF" secondAttribute="trailing" id="Q4h-sn-i9y"/>
+                            <constraint firstItem="4Zp-S8-WqF" firstAttribute="top" secondItem="KBm-s8-qML" secondAttribute="top" id="bZj-Db-nJK"/>
+                            <constraint firstItem="4X6-gd-91e" firstAttribute="centerY" secondItem="KBm-s8-qML" secondAttribute="centerY" id="vHI-ua-HyY"/>
+                            <constraint firstItem="4X6-gd-91e" firstAttribute="leading" secondItem="KBm-s8-qML" secondAttribute="leading" constant="15" id="vJT-nF-OVb"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk8-PV-1KU">
+                        <rect key="frame" x="15" y="64" width="290" height="2"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.10980392160000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.5" id="ITH-oh-Vml"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KBm-s8-qML" secondAttribute="bottom" id="C4V-49-MB0"/>
+                    <constraint firstAttribute="trailing" secondItem="rk8-PV-1KU" secondAttribute="trailing" constant="15" id="DQP-bT-bti"/>
+                    <constraint firstAttribute="trailing" secondItem="KBm-s8-qML" secondAttribute="trailing" constant="15" id="G16-Ed-2eI"/>
+                    <constraint firstAttribute="bottom" secondItem="rk8-PV-1KU" secondAttribute="bottom" id="NIC-zu-DXC"/>
+                    <constraint firstItem="rk8-PV-1KU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hFq-7z-XTW"/>
+                    <constraint firstItem="KBm-s8-qML" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="npK-AZ-KaI"/>
+                    <constraint firstItem="KBm-s8-qML" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yrc-C9-Q6p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnOpenCat" destination="4Zp-S8-WqF" id="FAR-CK-kcx"/>
+                <outlet property="lblCat" destination="4X6-gd-91e" id="4no-hu-SgK"/>
+                <outlet property="viewBG" destination="KBm-s8-qML" id="xVo-zg-eHt"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="-35.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_action_open" width="27" height="27"/>
+    </resources>
+</document>
